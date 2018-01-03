@@ -1,24 +1,24 @@
 # cpp-competitive-code
-If you want to setup C++ compiler on your linux system, you just have to simply use two commands in your terminal.
-First will be:
-`sudo apt-get update`
-This one is for update your package list.
+If you want to setup C++ compiler on your linux system, you just have to simply use two commands in your terminal. <br /><br />
+First is:
+`sudo apt-get update` <br />
+This one is for updating your package list.
 
 Second command is:
-`sudo apt-get install g++`
-This on is for installing g++ compilator on your system.
+`sudo apt-get install g++` <br />
+This one is for installing g++ compilor on your system.
 
-Everything is done for now. To compile sample c++ program, make a file called `main.cpp` and type this code inside:
+After installing, we will compile sample c++ program, make a file called `main.cpp` and type this code inside it:
 ```cpp
-#include <iostream>
+#include <iostream>  // header file for using cout
 
-int main() {
+int main() {     // int main() is the starting point of program and should be only one
   std::cout << "Hello World\n";
-  return 0;
+  return 0;      // return value is the exit code of your program, generally 0 means 'program successfully exited'
 }
 ```
-After that done, go to this location in your terminal and type:
-`g++ main.cpp -o out`
-After that, you will have executable file, ready for you to open it. You can do it by simply typing:
-`./out`
-You should see `Hello World` on your screen.
+Save the 'main.cpp' file in anly loaction and navigate to that location in terminal and type:<br />
+`g++ main.cpp -o out` (format: g++ source.cpp -o output_file_name)<br /><br />
+After that, you will have executable file and you can run it by typing:<br />
+`./out` (format: ./output_file_name)<br /><br />
+You will see `Hello World` on your screen.
